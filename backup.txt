@@ -30,7 +30,6 @@
       line-height: 1.6;
       position: relative;
       font-family: sans-serif;
-      overflow: hidden;
     }
 
     .lines {
@@ -144,8 +143,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
     }
 
     #rock:hover,
@@ -200,13 +197,9 @@
       background-color: #5c5858;
       color: #a7a6a6;
       font-size: 1.5rem;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
     }
 
-    #reset button:hover {
-      transform: scale(1.1);
-    }
+
   </style>
 
   <body>
@@ -221,7 +214,7 @@
     <!-- rock paper scissors -->
     <div id="wrapper">
       <div id="rock">
-        <img src="rock.png" alt="paper" />
+        <img src="rock.png" alt="rock" />
       </div>
       <div id="paper">
         <img src="paper.png" alt="paper" />
@@ -232,7 +225,6 @@
     </div>
 
     <!-- score -->
-
     <div id="score">
       <h2 id="result">Have fun!</h2>
       <p id="player">Player: 0</p>
@@ -240,13 +232,11 @@
     </div>
 
     <!-- reset button -->
-
     <div id="reset">
       <button>Reset</button>
     </div>
 
     <!-- javascript -->
-
     <script>
       const rock = document.querySelector("#rock");
       const paper = document.querySelector("#paper");
